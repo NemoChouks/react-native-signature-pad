@@ -20,7 +20,7 @@ class SignaturePad extends Component {
   static propTypes = {
     onChange: PropTypes.func,
     onError: PropTypes.func,
-    style: PropTypes.style,
+    style: PropTypes.any,
     penColor: PropTypes.string,
     dataURL: PropTypes.string,
   };
