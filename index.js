@@ -1,6 +1,7 @@
 'use strict';
 
-import React, { Component, PropTypes } from 'react';
+import PropTypes from 'prop-types'
+import React, { Component } from 'react';
 import {
   View,
   WebView,
@@ -19,7 +20,7 @@ class SignaturePad extends Component {
   static propTypes = {
     onChange: PropTypes.func,
     onError: PropTypes.func,
-    style: View.propTypes.style,
+    style: PropTypes.style,
     penColor: PropTypes.string,
     dataURL: PropTypes.string,
   };
